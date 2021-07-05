@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        @media (max-width:767px) {
+            
+            .parent{
+                margin-top: 570px;
+                margin-left: 100px;
+                display: grid;
+                width: 1200px;
+                grid-gap: 10px;
+                background-color: white;
+                grid-template: "a"
+                                "b"
+                                "c"
+                                "d"
+                                "e"
+                                "f";
+                grid-template-rows: 100px 100px 100px;
+            }
+        }
+
+        @media (min-width:768px) {
+            
+            .parent{
+                margin-top: 570px;
+                margin-left: 100px;
+                display: grid;
+                width: 1200px;
+                grid-gap: 10px;
+                background-color: white;
+                grid-template: "a b"
+                                "c d"
+                                "e f";
+                grid-template-rows: 100px 100px 100px;
+            }
+        }
+
+        @media (min-width:1000px) {
+            
+            .parent{
+                margin-top: 570px;
+                margin-left: 100px;
+                display: grid;
+                width: 1200px;
+                grid-gap: 10px;
+                background-color: white;
+                grid-template: "a b c"
+                                "d e f";
+                grid-template-rows: 100px 100px;
+            }
+        }
+        
+        #child1{
+            grid-area: a;
+            background-color: white;
+        }
+        #child2{
+            grid-area: b;
+            background-color: white;
+        }
+        #child3{
+            grid-area: c;
+            background-color: white;
+        }
+        #child4{
+            grid-area: d;
+            background-color: white;
+        }
+        #child5{
+            grid-area: e;
+            background-color: white;
+            
+        }
+        #child6{
+            grid-area: f;
+            background-color: white;
+        }
+        .art{
+            width: 60px;
+            float: left;
+        }
+        .gridspan{
+            padding-left: 20px;
+        }
+        .gridp{
+            color: grey;
+        }
+        #p{
+            color: red;
+            text-align: center;
+            font-size: 10px;
+        }
+        #h2{
+            text-align: center;
+            margin-top: 0px;
+        }
+        .imagep{
+            margin-top: 0px;
+        }
+        #imgdiv{
+            float:left;
+            margin-left: 100px;
+        }
+        .middiv{
+            float: left;
+            width: 800px;
+            margin-top: 30px;
+            margin-left: 300px;
+            text-align: center;
+        }
+        #middivspan{
+            background-color: orangered;
+            color: white;
+            padding: 10px;
+        }
+        #middivp{
+            color: orangered;
+            margin-top: 100px;
+        }
+        #middivh3{
+            font-weight: 1000;
+            margin-top: 0px;
+        }
+        #middivspan2{
+            margin-top: 0px;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <p id="p">NEWS & UPDATE</p>
+    <h2 id="h2">Our Blog Posts</h2>
+    <div style=" float: left;">
+        <div id="imgdiv">
+            <img src="https://tse2.mm.bing.net/th?id=OIP._mg0_uiceaHVGSYinX0XGQHaE8&pid=Api&P=0&w=267&h=179" alt="dummy">
+            <p class="imagep">29th january 2019 <br>Architectural Art Modern</p>
+        </div>
+        <div style="float:left; margin-left: 200px;">
+            <img src="https://tse2.mm.bing.net/th?id=OIP._mg0_uiceaHVGSYinX0XGQHaE8&pid=Api&P=0&w=267&h=179" alt="dummy">
+            <p class="imagep">29th january 2019 <br>Architectural Art Modern</p>
+        </div>
+        <div style="float:left; margin-left: 200px;">
+            <img src="https://tse2.mm.bing.net/th?id=OIP._mg0_uiceaHVGSYinX0XGQHaE8&pid=Api&P=0&w=267&h=179" alt="dummy">
+            <p class="imagep">29th january 2019 <br>Architectural Art Modern</p>
+        </div>
+    </div>
+        <div class="middiv">
+            <span id="middivspan">view all Posts</span>
+            <p id="middivp">SERVICES</p>
+            <h3 id="middivh3">Our Services</h3>
+            <span id="middivspan2">Het HTML element is een algemene container voor flow content, en heeft geen specifieke betekenis.</span>
+        </div>
+        <div class="parent">
+            <div id="child1">
+                <img class="art" src="https://tse3.mm.bing.net/th?id=OIP.rz5T9zobYFdDY54rnPFhuQHaHa&pid=Api&P=0&w=300&h=300" alt="">
+                <span class="gridspan">Innovative structure</span>
+                <p class ="gridp">Free vector icons in SVG, PSD, PNG, EPS and ICON FONT Download over 19,650 icon of</p>
+            </div>
+            <div id="child2">
+                <img class="art" src="https://tse3.mm.bing.net/th?id=OIP.rz5T9zobYFdDY54rnPFhuQHaHa&pid=Api&P=0&w=300&h=300" alt="">
+                <span class="gridspan">Innovative structure</span>
+                <p class ="gridp">Free vector icons in SVG, PSD, PNG, EPS and ICON FONT Download over 19,650 icons of</p>
+            </div>
+            <div id="child3">
+                <img class="art" src="https://tse3.mm.bing.net/th?id=OIP.rz5T9zobYFdDY54rnPFhuQHaHa&pid=Api&P=0&w=300&h=300" alt="">
+                <span class="gridspan">Innovative structure</span>
+                <p class ="gridp">Free vector icons in SVG, PSD, PNG, EPS and ICON FONT Download over 19,650 icons of</p>
+            </div>
+            <div id="child4">
+                <img class="art" src="https://tse3.mm.bing.net/th?id=OIP.rz5T9zobYFdDY54rnPFhuQHaHa&pid=Api&P=0&w=300&h=300" alt="">
+                <span class="gridspan">Innovative structure</span>
+                <p class ="gridp">Free vector icons in SVG, PSD, PNG, EPS and ICON FONT Download over 19,650 icons of</p>
+            </div>
+            <div id="child5">
+                <img class="art" src="https://tse3.mm.bing.net/th?id=OIP.rz5T9zobYFdDY54rnPFhuQHaHa&pid=Api&P=0&w=300&h=300" alt="">
+                <span class="gridspan">Innovative structure</span>
+                <p class ="gridp">Free vector icons in SVG, PSD, PNG, EPS and ICON FONT Download over 19,650 icons of</p>
+            </div>
+            <div id="child6">
+                <img class="art" src="https://tse3.mm.bing.net/th?id=OIP.rz5T9zobYFdDY54rnPFhuQHaHa&pid=Api&P=0&w=300&h=300" alt="">
+                <span class="gridspan">Innovative structure</span>
+                <p class ="gridp">Free vector icons in SVG, PSD, PNG, EPS and ICON FONT Download over 19,650 icons of</p>
+            </div>
+        </div>
+    
+</body>
+</html>
